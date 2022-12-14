@@ -1,0 +1,156 @@
+
+@inproceedings{falqueDescenteAgressiveBorne2021,
+  title = {Descente Agressive de la Borne en Optimisation sous Contraintes},
+  booktitle = {Actes des 16es Journées Francophones de Programmation par Contraintes (JFPC’21)},
+  author = {Falque, T. and Lecoutre, C. and Mazure, B. and Wattez, H.},
+  date = {2021-06},
+  abbr = {JFPC},
+  abstract = {La recherche avec retour-en-arrière est une approche complète pour explorer l'espace de recherche d'un problème d'optimisation sous contraintes. À chaque nouvelle solution trouvée durant la recherche, sa borne associée est utilisée pour contraindre plus fortement le problème, et ainsi le reste de la recherche. Un scénario dystopique, mais assez proche de la réalité, correspond à une séquence de nombreuses solutions trouvées avec de très faibles différences entre les bornes successives. Partant de cette observation, ce papier propose une approche basée sur la descente aggressive de la borne (ABD) : à chaque borne trouvée, l'objectif suivant croît de manière exponentielle. Nous montrons que cette approche rend le solveur plus robuste, et ce, de façon plus prononcée au commencement de sa recherche. Nos expérimentations confirment ce comportement autant pour les problèmes d'optimisation sous contraintes que pour les problèmes d'optimisation Pseudo-Booléens.},
+  langid = {french}
+}
+
+@inproceedings{falqueMetricsMissionExperimentations2021,
+  title = {Metrics : Mission Expérimentations},
+  booktitle = {Actes des 16es Journées Francophones de Programmation par Contraintes (JFPC’21)},
+  author = {Falque, T. and Wallon, R. and Wattez, H.},
+  date = {2021-06},
+  abbr = {JFPC},
+  abstract = {Le développement de solveurs de contraintes s'accompagne nécessairement d'une phase d'expérimentation, permettant d'évaluer les performances des fonctionnalités implantées. Pour chacun des solveurs considérés, il faut alors collecter et analyser des statistisques relatives à leur exécution et qui, le plus souvent, restent les mêmes. Néanmoins, il existe probablement autant de scripts permettant d'extraire ces statistiques et de tracer les figures associées que de chercheurs du domaine. Un outil unifiant et facilitant les analyses de résultats expérimentaux paraît donc nécessaire, notamment pour favoriser le partage et la reproductibilité de ces résultats.  Partant de ce constat, nous avons développé la bibliothèque Metrics, dont l'ambition est de fournir une chaîne complète d'outils conçue dans cette optique. Dans cet article, nous présentons cette bibliothèque et illustrons son utilisation en rejouant l'analyse des résultats de la compétition XCSP'19.},
+  file = {/Users/wattez/Zotero/storage/MEV5F7TU/Falque et al. - 2021 - Metrics  Mission Expérimentations.pdf},
+  langid = {french}
+}
+
+@inproceedings{falqueMetricsUnifiedLibrary2020,
+  title = {Metrics: {{Towards}} a {{Unified Library}} for {{Experimenting Solvers}}},
+  booktitle = {11th {{International Workshop}} on {{Pragmatics}} of {{SAT}} ({{POS}}’20)},
+  author = {Falque, T. and Wallon, R. and Wattez, H.},
+  date = {2020-07},
+  abbr = {POS},
+  abstract = {When developing a SAT solver, one of the most important parts is to perform experiments so as to evaluate its performance. Most of the time, this process remains the same, so that everybody collects almost the same statistics about the solver execution. However, how many scripts are there to retrieve experimental data and draw scatter or cactus plots? Probably as many as researchers in the domain. Based on this observation, this paper introduces Metrics, a Python library, aiming to unify and make easier the analysis of solver experiments. The ambition of Metrics is to provide a complete toolchain from the execution of the solver to the analysis of its performance. In particular, this library simplifies the retrieval of experimental data from many different inputs (including the solver's output), and provides a nice interface for drawing commonly used plots, computing statistics about the execution of the solver, and effortlessly organizing them (e.g., in Jupyter notebooks). In the end, the main purpose of Metrics is to favor the sharing and reproducibility of experimental results and their analysis.},
+  langid = {english},
+  workshop = {yes}
+}
+
+@inproceedings{paparrizouPerturbingBranchingHeuristics2020,
+  title = {Perturbing {{Branching Heuristics}} in {{Constraint Solving}}},
+  booktitle = {Proceedings of the 26th {{International Conference}} on {{Principles}} and {{Practice}} of {{Constraint Programming}} ({{CP}}’20)},
+  author = {Paparrizou, A. and Wattez, H.},
+  date = {2020-09-01},
+  pages = {496--513},
+  doi = {10.1007/978-3-030-58475-7_29},
+  abbr = {CP},
+  abstract = {Variable ordering heuristics are one of the key settings for an efficient constraint solver. During the last two decades, a considerable effort has been spent for designing dynamic heuristics that iteratively change the order of variables as search progresses. At the same time, restart and randomization methods have been devised for alleviating heavy-tailed phenomena that typically arise in backtrack search. Despite restart methods are now well-understood, choosing how and when to randomize a given heuristic remains an open issue in the design of modern solvers. In this paper, we present several conceptually simple perturbation strategies for incorporating random choices in constraint solving with restarts. The amount of perturbation is controlled and learned in a bandit-driven framework under various stationary and non-stationary exploration policies, during successive restarts. Our experimental evaluation shows significant performance improvements for the perturbed heuristics compared to their classic counterpart, establishing the need for incorporating perturbation in modern constraint solvers.},
+  file = {/Users/wattez/Zotero/storage/N9AX9AXV/main.pdf;/Users/wattez/Zotero/storage/PQ8486DE/Paparrizou et Hugues - 2020 - Perturbing Branching Heuristics in Constraint Solv.pdf},
+  isbn = {978-3-030-58474-0},
+  langid = {english}
+}
+
+@inproceedings{tabiaDataAnalyticsVisualization2018,
+  title = {Data {{Analytics}} and {{Visualization}} for {{Connected Objects}}: {{A Case Study}} for {{Sleep}} and {{Physical Activity Trackers}}},
+  shorttitle = {Data {{Analytics}} and {{Visualization}} for {{Connected Objects}}},
+  booktitle = {Proceedings of the 31st {{International Conference}} on {{Industrial Engineering}} and {{Other Applications}} of {{Applied Intelligent Systems}} ({{IEA}}/{{AIE}}'18)},
+  author = {Tabia, K. and Wattez, H. and Ydée, N. and Sedki, K.},
+  editor = {Mouhoub, M. and Sadaoui, Samira and Ait Mohamed, Otmane and Ali, Moonis},
+  date = {2018},
+  pages = {685--696},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-319-92058-0_66},
+  abbr = {IEA/AIE},
+  abstract = {In recent years, a large number of connected objects for the monitoring of activities (health and well-being, sleep, fitness, nutrition, etc.) have emerged and are very popular with the general public. No doubt that their price, their ease of use and their interest in their health and well-being contribute to this success around the world. However, many of these consumer-connected objects suffer from several limitations, especially with regard to their high-level or smart functionalities and the added value of the information provided by such objects. In this paper, we first focus on such limitations then provide a real case study in monitoring physical activities and sleep using Fitbit smart watches. We propose some high level functionalities by taking advantage of the large amount of data collected and using data analytics and visualization techniques.},
+  eventtitle = {{{IEA}}/{{AIE}}},
+  isbn = {978-3-319-92058-0},
+  keywords = {Physical Activity Tracking,Real Case Study,Sleep Tracking,Smart Functionalities,Smart Watches},
+  langid = {english},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
+@inproceedings{wattezFocusHeuristiquesBasees2021,
+  title = {Focus sur les heuristiques basées sur la pondération de contraintes},
+  booktitle = {Actes des 16es Journées Francophones de Programmation par Contraintes (JFPC’21)},
+  author = {Wattez, H. and Koriche, F. and Lecoutre, C. and Paparrizou, A. and Tabary, S.},
+  date = {2021-06},
+  abbr = {JFPC},
+  abstract = {La recherche avec retour-en-arrière est une approche complète et traditionnellement utilisée dans la résolution d'instances modélisées sous forme de problèmes de satisfaction et optimisation de contraintes. L'espace exploré durant la recherche peut drastiquement fluctuer selon l'ordre dans lequel les variables sont instanciées. En considérant que le parfait ordonnancement des variables résulterait en une recherche sans retour-en-arrière, la recherche d'heuristiques de choix de variables suscite toujours autant l'intérêt des chercheurs. Depuis quinze ans, l'approche basée sur la pondération des contraintes s'est toujours montrée fructueuse et efficace pour guider la recherche avec retour-en-arrière. Dans ce papier, nous montrons comment la populaire et générique heuristique de choix de variables wdeg a été rendue plus robuste ces deux dernières années de part l'affinement et le vieillissement de l'information prélevée à chaque conflit. Nos résultats expérimentaux sur ACE, le nouvel alias d'AbsCon, montrent le réel intérêt de ces heuristiques revisitées.},
+  file = {/Users/wattez/Zotero/storage/N5KTQK33/Wattez et al. - 2021 - Focus sur les heuristiques basées sur la pondérati.pdf},
+  langid = {french}
+}
+
+@inproceedings{wattezHeuristiquesRechercheBandit2019,
+  title = {Heuristiques de recherche : un bandit pour les gouverner toutes},
+  booktitle = {Actes des 15es Journées Francophones de Programmation par Contraintes (JFPC’19)},
+  author = {Wattez, H. and Koriche, F. and Lecoutre, C. and Paparrizou, A. and Tabary, S.},
+  date = {2019-06},
+  location = {{Albi, France}},
+  url = {https://gitlab.univ-artois.fr/productions/one-bandit-many-heuristics/jfpc-2019},
+  abbr = {JFPC},
+  file = {/Users/wattez/Zotero/storage/P8LTKHAC/Wattez et al. - 2019 - Heuristiques de recherche  un bandit pour les gou.pdf;/Users/wattez/Zotero/storage/SJPVWEAC/slides-3.pdf},
+  langid = {french}
+}
+
+@inproceedings{wattezLearningVariableOrdering2020,
+  title = {Learning {{Variable Ordering Heuristics}} with {{Multi}}-{{Armed Bandits}} and {{Restarts}}},
+  booktitle = {Proceedings of the 24th {{European Conference}} on {{Artificial Intelligence}} ({{ECAI}}’20)},
+  author = {Wattez, H. and Koriche, F. and Lecoutre, C. and Paparrizou, A. and Tabary, S.},
+  date = {2020-08},
+  location = {{Santiago de Compostela ( virtual ), Spain}},
+  doi = {10.3233/FAIA200115},
+  url = {https://hal.archives-ouvertes.fr/hal-03096124},
+  urldate = {2021-03-03},
+  abbr = {ECAI},
+  abstract = {In constraint-based applications, the user is often required to be an expert as, for a given problem instance, many parameters of the used solver must be manually tuned to improve its efficiency. Clearly, this background knowledge burdens the spread of constraint programming technology to non-expert users. In order to alleviate this issue, the idea of “autonomous” constraint solving is to adjust the solver parameters and to efficiently handle any problem instance without manual tuning. Notably, the choice of the variable ordering heuristic can lead to drastically different performances. A key question arises then: how can we find the best variable ordering heuristic for a problem instance, given a set of available heuristics provided by the solver? To answer this question, we propose an algorithmic framework that combines multi-armed bandits and restarts. Each candidate heuristic is viewed as an arm, and the framework learns to estimate the best heuristic using a multi-armed bandit algorithm. The common mechanism of restarts is used to provide feedback for reinforcing the bandit algorithm. Based on a thorough experimental evaluation, we demonstrate that this framework is able to find the best heuristic for most problem instances; notably, it outperforms the state-of-the-art in terms of time and solved instances.},
+  file = {/Users/wattez/Zotero/storage/I65HN32M/Wattez et al. - 2020 - Learning Variable Ordering Heuristics with Multi-A.pdf},
+  langid = {english},
+  series = {Frontiers in {{Artificial Intelligence}} and {{Applications}} 325, {{IOS Press}} 2020, {{ISBN}} 978-1-64368-100-9}
+}
+
+@inproceedings{wattezPerturbationHeuristiquesBranchement2021,
+  title = {Perturbation des heuristiques de branchement dans la résolution de contraintes},
+  booktitle = {Actes des 16es Journées Francophones de Programmation par Contraintes (JFPC’21)},
+  author = {Wattez, H. and Koriche, F. and Paparrizou, A.},
+  date = {2021-06},
+  abbr = {JFPC},
+  abstract = {L'heuristique de choix de variables est l'un des mécanismes clés d'un solveur de contraintes. Au cours des deux dernières décennies, des heuristiques efficaces ont été proposées, adaptant itérativement l'ordre des variables à mesure que la recherche progresse. Dans ce même temps, des méthodes de redémarrage et de randomisation ont été conçues pour rendre les solveurs plus robustes. Alors que les méthodes de redémarrage sont maintenant bien comprises, choisir comment et quand randomiser une heuristique donnée reste un problème ouvert. Dans cet article, nous présentons plusieurs stratégies de perturbation conceptuellement simples pour incorporer des choix aléatoires dans la résolution de contraintes avec redémarrages. La quantité de perturbation est contrôlée et apprise par des bandits sous diverses politiques d'exploration (stationnaire ou non stationnaire) lors des redémarrages successifs. Notre évaluation expérimentale montre une amélioration significative des performances pour les heuristiques perturbées par rapport à leurs homologues d'origine.},
+  langid = {french}
+}
+
+@inproceedings{wattezRefiningConstraintWeighting2019,
+  title = {Refining {{Constraint Weighting}}},
+  booktitle = {Proceedings of the 31st {{International Conference}} on {{Tools}} with {{Artificial Intelligence}} ({{ICTAI}}’19)},
+  author = {Wattez, H. and Lecoutre, C. and Paparrizou, A. and Tabary, S.},
+  date = {2019-11},
+  pages = {71--77},
+  issn = {2375-0197},
+  doi = {10.1109/ICTAI.2019.00019},
+  abbr = {ICTAI},
+  abstract = {Backtracking search is a complete approach that is traditionally used to solve instances modeled as constraint satisfaction problems. The space explored during search depends dramatically on the order that variables are instantiated. Considering that a perfect variable ordering might result to a backtrack-free search (i.e., finding backdoors, cycle cutsets), finding heuristics for variable ordering has always attracted research interest. For fifteen years, constraint weighting has been shown to be a successful approach for guiding backtrack search. In this paper, we show how the popular generic variable ordering heuristic dom/wdeg can be made more robust by taking finer information at each conflict: the "current" arity of the failing constraint as well as the size of the current domains of the variables involved in that constraint. Our experimental results show the practical interest of this refined variant of constraint weighting.},
+  eventtitle = {2019 {{IEEE}} 31st {{International Conference}} on {{Tools}} with {{Artificial Intelligence}} ({{ICTAI}})},
+  file = {/Users/wattez/Zotero/storage/G7BRFABL/Wattez et al. - 2019 - Refining Constraint Weighting.pdf;/Users/wattez/Zotero/storage/ITC7IX8Q/slides.pdf},
+  keywords = {backtrack search,backtrack-free search,backtracking,backtracking search,constraint satisfaction,constraint satisfaction problems,constraint theory,constraint weighting,perfect variable ordering,search heuristics,search problems},
+  langid = {english}
+}
+
+@unpublished{wattezSolveursContraintesAutonomes2018,
+  title = {Solveurs de Contraintes Autonomes},
+  author = {Wattez, H.},
+  date = {2018-09-06},
+  location = {{Lens}},
+  url = {https://gitlab.univ-artois.fr/productions/solveurs-de-contraintes-autonomes/master-2},
+  abbr = {ARTOIS},
+  abstract = {Nous sommes dans un contexte où l’informatique est en continuelle expansion. Malgré cette croissance, certains problèmes demeurent et atteignent une complexité supérieure aux capacités actuelles de nos ordinateurs. Nous allons étudier l’un d’eux : le Problème de Satisfaction de Contraintes (CSP). Les CSP sont des problèmes combinatoires dont la complexité peut croître très vite. En effet, les problèmes CSP font partie des problèmes NP-complets les plus connus. Pour remédier en partie à cette complexité, il existe des solveurs CSP. Ces solveurs permettent, à travers différentes stratégies de recherche, la résolution de certains d’entre eux en un temps raisonnable. Un point important dans le choix d’une bonne stratégie concerne, par exemple, la sélection de l’heuristique de recherche. Une heuristique savamment choisie permet de réduire significativement la taille de l’espace de recherche. Cependant, sélectionner une heuristique n’est pas chose simple. De plus, de part leur nature, aucune heuristique ne peut être continuellement meilleure qu’une autre. Cela induit qu’utiliser une seule et même heuristique pour un large problème peut être désavantageux quant à l’efficacité de la recherche. L’idée des travaux que nous menons tend à remplacer le rôle de l’humain par un mécanisme intelligent, permettant d’orienter automatiquement le solveur au cours de sa recherche. Ce mécanisme s’inspire du problème des Bandits Multi-Bras. Le solveur apprend et sélectionne lui-même une heuristique parmi un ensemble, le but étant d’automatiser le choix de l’heuristique produisant les meilleures performances. Nous voyons par la suite que l’heuristique n’est pas la seule caractéristique que nous tentons de rendre autonome.},
+  file = {/Users/wattez/Zotero/storage/YAFGV23C/Solveurs_de_Contraintes_Autonomes-Hugues_Wattez.pdf},
+  langid = {french}
+}
+
+@unpublished{wattezVisualisationPourApplications2017,
+  title = {Visualisation pour les applications de suivi des activités physiques et du sommeil},
+  author = {Wattez, H.},
+  date = {2017},
+  location = {{Lens}},
+  abbr = {ARTOIS},
+  abstract = {Ces dernières années, nous avons connu l’essor des technologies, non seulement dans leur sophistication mais aussi dans leur miniaturisation. Cette expansion prend en compte les objets connectés. Ces objets, remplis de capteurs en tout genre, permettent de collecter une quantité phénoménale d’informations sur nous et notre environnement. Ces informations transitent ensuite entre notre smartphone et ce qu’on appelle le "cloud". Tout est enregistré et archivé dans d’immenses serveurs aux quatre coins du monde. Il s’agit en réalité du phénomène de "Big Data". Dans ce TER, nous allons étudié l’ensemble de ces notions, de ces dispositifs et plus spécifiquement nous intéresser aux objets connectés liés à la prise d’informations d’activités physiques et du sommeil. Le problème, lorsque nous possédons une telle quantité de données, est la représentation que nous tentons d’en faire. En effet, il s’agit d’une prise quotidienne d’une foule d’informations liées aux activités physiques et du sommeil, ce qui en un an peut représenter une quantité de données difficilement appréciable pour une simple vision humaine. Ce qui nous incite donc à nous demander par quels moyens peut-on visualiser un tel volume de données ? Un autre problème vient se joindre à l’analyse de ces données. Est-on capable de retirer un enseignement de ces données ? Les analyses, liées aux applications actuelles des objets connectées, permettent-elles de produire de l’information supplémentaire (corrélation, chronicité, prédiction, etc) ? Comment peut-on visualiser ce type d’analyse ? Le but de ce TER est donc d’analyser les données d’activités physiques et du sommeil collectées par les objets connectés. En plus de cette analyse, nous devrons rendre compte de ces données, à l’utilisateur, à travers des visualisations intelligentes et dynamiques. Grâce à ces visualisations, il pourra se rendre compte de troubles qu’il peut avoir durant son sommeil et du lien que cela peut avoir avec ses activités physiques ou son quotidien.},
+  file = {/Users/wattez/Zotero/storage/PITZ3WD7/Wattez - Master Informatique de l’Universit´e d’Artois.pdf},
+  langid = {french}
+}
+
+

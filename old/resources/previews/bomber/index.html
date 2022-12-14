@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<style>
+			td{
+				border: solid 1px black;
+				width: 50px;
+				height: 50px;
+				background-size: 50px 50px;
+			}
+			td img{
+				height: 46px;
+				width: 46px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="map">
+		</div>
+	</body>
+</html>
+<script src="script/items.js"></script>
+<script src="script/map.js"></script>
+<script src="script/joueur.js"></script>
+<script src="script/bonus.js"></script>
+<script>
+	
+	var map = new Map(7, 'map', 2000);
+	var joueur = new Joueur('Hugoboss');
+	map.positionJoueur(joueur,0,0);
+	document.addEventListener('keydown', function(e){ joueur.actionJoueur(e.keyCode); }, false);
+
+</script>

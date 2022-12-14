@@ -1,0 +1,241 @@
+<html>
+	<head>
+		<style>
+			body{
+				background-image:url("img/background.jpg");
+				background-size: 100% 100%;
+				margin:0px;
+				width:100%;
+				height:100%;
+			}
+			
+			table{
+				position:fixed;
+				z-index:100;
+			}
+			
+			#bg2{
+				position:fixed;
+				height:100%;
+				width:100%;
+				z-index:99;
+			}
+			
+			#orderit{
+				position:fixed;
+				z-index:99;
+				width:30%;
+				bottom:0px;
+				right:-15%;
+				opacity:0.8;
+				display:none;
+			}
+			#orderit:hover{
+				right:0px;
+			}
+			
+			#banzai{
+				position:fixed;
+				z-index:99;
+				width:20%;
+				top:-10%;
+				left:-10%;
+				opacity:0.8;
+				display:none;
+			}
+			#banzai:hover{
+				left:0px;
+				top:0px;
+			}
+			
+			td, div{
+				background-size: 90% 90%;
+				background-repeat:no-repeat;
+				background-position:center;
+				opacity:0.8;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		</table>
+		<img id="bg2" src="img/bgTable.png"/>
+		<img id="orderit" src="img/orderIt.png"/>
+		<img id="banzai" src="img/banzai.png"/>
+	</body>
+	<script src="script/tetromino.js"></script>
+	<script src="script/GestionEclat.js"></script>
+	<script src="script/Eclat.js"></script>
+	<script>
+		window.onload = function(){
+		
+			myAudio = new Audio('sound/tetris.ogg'); 
+			myAudio.addEventListener('ended', function() {
+				this.currentTime = 0;
+				this.play();
+			}, false);
+			myAudio.play();
+			
+			var table=document.getElementsByTagName("table")[0];
+				var tableTop=99/1406*window.innerHeight;
+				var tableLeft=1000/2557*window.innerWidth;
+				var tableWidth=644/2557*window.innerWidth;
+				var tableHeigth=1225/1406*window.innerHeight;
+			    table.style.marginTop=tableTop;
+				table.style.marginLeft=tableLeft;
+				table.style.height=tableHeigth;
+				table.style.width=tableWidth;
+				
+			var tabTD=new Array;
+				var tds=document.getElementsByTagName("td");
+				var k=0;
+				for(var i=0;i<19;i++){
+					tabTD[i]=new Array;
+					for(var j=0;j<10;j++)
+						tabTD[i][j]=tds[k++];
+				}
+				
+			var tetrominos=new Array;
+			    var k=0;
+				tetrominos[k++]=new Tetromino(4,18,6,"img/tetromino/wattez",1);
+				tetrominos[k++]=new Tetromino(0,17,6,"img/tetromino/hugues",0);
+				tetrominos[k++]=new Tetromino(7,17,3,"img/tetromino/19yo",0);
+				tetrominos[k++]=new Tetromino(2,16,8,"img/tetromino/guemappe",3);
+				tetrominos[k++]=new Tetromino(0,15,6,"img/tetromino/france",2);
+				
+				tetrominos[k++]=new Tetromino(0,18,9,"img/tetromino/education",4);
+				tetrominos[k++]=new Tetromino(1,17,4,"img/tetromino/2013",5);
+				tetrominos[k++]=new Tetromino(6,17,4,"img/tetromino/2015",5);
+				tetrominos[k++]=new Tetromino(0,16,3,"img/tetromino/hnd",6);
+				tetrominos[k++]=new Tetromino(4,16,5,"img/tetromino/in it",6);
+				tetrominos[k++]=new Tetromino(1,15,4,"img/tetromino/2012",7);
+				tetrominos[k++]=new Tetromino(6,15,4,"img/tetromino/2013",7);
+				tetrominos[k++]=new Tetromino(0,14,3,"img/tetromino/hsd",8);
+				tetrominos[k++]=new Tetromino(3,14,7,"img/tetromino/science",8);
+				tetrominos[k++]=new Tetromino(0,13,4,"img/tetromino/with",9);
+				tetrominos[k++]=new Tetromino(5,13,5,"img/tetromino/honor",9);
+				
+				tetrominos[k++]=new Tetromino(0,18,10,"img/tetromino/experience",10);
+				tetrominos[k++]=new Tetromino(0,17,6,"img/tetromino/farmer",11);
+				tetrominos[k++]=new Tetromino(6,17,4,"img/tetromino/work",11);
+				tetrominos[k++]=new Tetromino(1,16,6,"img/tetromino/repair",12);
+				tetrominos[k++]=new Tetromino(8,16,2,"img/tetromino/pc",12);
+				
+				tetrominos[k++]=new Tetromino(0,18,5,"img/tetromino/other",13);
+				tetrominos[k++]=new Tetromino(6,18,4,"img/tetromino/skill",13);
+				tetrominos[k++]=new Tetromino(2,17,8,"img/tetromino/language",14);
+				tetrominos[k++]=new Tetromino(0,16,2,"img/tetromino/fr",15);
+				tetrominos[k++]=new Tetromino(3,16,2,"img/tetromino/en",15);
+				tetrominos[k++]=new Tetromino(6,16,2,"img/tetromino/es",15);
+				tetrominos[k++]=new Tetromino(2,15,8,"img/tetromino/computer",16);
+				tetrominos[k++]=new Tetromino(0,14,4,"img/tetromino/java",17);
+				tetrominos[k++]=new Tetromino(5,14,1,"img/tetromino/c",17);
+				tetrominos[k++]=new Tetromino(7,14,3,"img/tetromino/sql",17);
+				tetrominos[k++]=new Tetromino(0,13,4,"img/tetromino/html",18);
+				tetrominos[k++]=new Tetromino(5,13,3,"img/tetromino/css",18);
+
+			var imgOrderIt=document.getElementById("orderit");
+			var imgBanzai=document.getElementById("banzai");
+			var bg2=document.getElementById("bg2");
+			var globalNextK=0, globalNextI=0;
+				
+			var nextMove=setInterval(function(){
+			
+				for(var j=tetrominos[globalNextK].j;j<tetrominos[globalNextK].longueur+tetrominos[globalNextK].j;j++){
+					
+					if(globalNextI>0)
+						tabTD[globalNextI-1][j].style.backgroundImage="";
+					tabTD[globalNextI][j].style.backgroundImage="url('"+tetrominos[globalNextK].directory+"/"+(j-tetrominos[globalNextK].j)+".png')";
+					
+				}
+				
+				if(globalNextI<tetrominos[globalNextK].maxI)
+					globalNextI++;
+				else{
+					if(globalNextK==4 ||globalNextK==15 || globalNextK==20 || globalNextK==32)
+						explosion();
+					globalNextI=0;
+					if(globalNextK<tetrominos.length-1)
+						globalNextK++;
+					else{
+						imgOrderIt.style.display="inline";
+						clearInterval(nextMove);
+					}
+				}
+			
+			},200);
+			
+			var gestionEclat=new GestionEclat();
+			
+			function explosion(){
+			
+				for(var i=0;i<19;i++)
+					for(var j=0;j<10;j++){
+						if(tabTD[i][j].style.backgroundImage!="")
+							gestionEclat.newEclat(tabTD[i][j].style.backgroundImage,tableLeft+(j/10)*tableWidth,tableTop+(i/19)*tableHeigth,tableWidth/10);
+						tabTD[i][j].style.backgroundImage="";
+					}
+			
+			}
+			
+			imgOrderIt.onclick=function(){
+			
+				gestionEclat.deleteAll();
+			
+				var i;
+				for(var k=0;k<tetrominos.length;k++){
+					i=tetrominos[k].posIFinal;
+					for(var j=tetrominos[k].j;j<tetrominos[k].longueur+tetrominos[k].j;j++)
+						tabTD[i][j].style.backgroundImage="url('"+tetrominos[k].directory+"/"+(j-tetrominos[k].j)+".png')";
+				}
+				
+				imgOrderIt.style.display="none";
+				imgBanzai.style.display="inline";
+				
+			
+			}
+			
+			imgBanzai.onclick=function(){
+				
+				explosion();
+				gestionEclat.newEclat("url('img/tetes/nico.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/antoine.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/luc.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/quentin.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/gottrand.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/dylan.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/lienard.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/r1.png')",50,50,100);
+				gestionEclat.newEclat("url('img/tetes/nico2.png')",50,50,100);
+				
+				document.body.style.backgroundImage="url('img/background2.jpg')"
+				bg2.style.display="none";
+				imgBanzai.style.display="none";
+				imgOrderIt.style.display="inline";
+				
+			
+			}
+					
+			
+		}
+	</script>
+</html>

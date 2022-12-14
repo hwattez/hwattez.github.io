@@ -1,0 +1,358 @@
+{
+    "conf_int": [
+        {
+            "title_s": [
+                "Best Heuristic Identification for Constraint Satisfaction"
+            ],
+            "abstract_s": [
+                "In constraint satisfaction problems, the variable ordering heuristic takes a central place by selecting the variables to branch on during backtrack search. As many hand-crafted branching heuristics have been proposed in the literature, a key issue is to identify, from a pool of candidate heuristics, which one is the best for solving a given constraint satisfaction task. Based on the observation that modern constraint solvers are using restart sequences, the best heuristic identification problem can be cast in the context of multi-armed bandits as a non-stochastic best arm identification problem. Namely, during each run of some given restart sequence, the bandit algorithm selects a heuristic and receives a reward for this heuristic before proceeding to the next run. The goal is to identify the best heuristic using few runs, and without any stochastic assumption about the constraint solver. In this study, we propose an adaptive variant of Successive Halving that exploits Luby's universal restart sequence. We analyze the convergence of this bandit algorithm in the non-stochastic setting, and we demonstrate its empirical effectiveness on various constraint satisfaction benchmarks."
+            ],
+            "conferenceTitle_s": "31st International Joint Conference on Artificial Intelligence (IJCAI'22)",
+            "authFullName_s": [
+                "Frederic Koriche",
+                "Christophe Lecoutre",
+                "Anastasia Paparrizou",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03678354",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03678354v2",
+            "page_s": "1859-1865",
+            "doiId_s": "10.24963/ijcai.2022/258",
+            "publicationDateY_i": 2022,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03678354/file/article_long.pdf"
+            ],
+            "n": 1
+        },
+        {
+            "title_s": [
+                "Perturbing Branching Heuristics in Constraint Solving"
+            ],
+            "abstract_s": [
+                "Variable ordering heuristics are one of the key settings for an efficient constraint solver. During the last two decades, a considerable effort has been spent for designing dynamic heuristics that iteratively change the order of variables as search progresses. At the same time, restart and randomization methods have been devised for alleviating heavy-tailed phenomena that typically arise in backtrack search. Despite restart methods are now well-understood, choosing how and when to randomize a given heuristic remains an open issue in the design of modern solvers. In this paper, we present several conceptually simple perturbation strategies for incorporating random choices in constraint solving with restarts. The amount of perturbation is controlled and learned in a bandit-driven framework under various stationary and non-stationary exploration policies, during successive restarts. Our experimental evaluation shows significant performance improvements for the perturbed heuristics compared to their classic counterpart, establishing the need for incorporating perturbation in modern constraint solvers."
+            ],
+            "conferenceTitle_s": "26th International Conference on Principles and Practice of Constraint Programming",
+            "authFullName_s": [
+                "Anastasia Paparrizou",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03096113",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03096113",
+            "doiId_s": "10.1007/978-3-030-58475-7_29",
+            "publicationDateY_i": 2020,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03096113/file/final.pdf"
+            ],
+            "n": 2
+        },
+        {
+            "title_s": [
+                "Learning Variable Ordering Heuristics with Multi-Armed Bandits and Restarts"
+            ],
+            "conferenceTitle_s": "ECAI 2020 - 24th European Conference on Artificial Intelligence",
+            "authFullName_s": [
+                "Hugues Wattez",
+                "Fr\u00e9d\u00e9ric Koriche",
+                "Christophe Lecoutre",
+                "Anastasia Paparrizou",
+                "S\u00e9bastien Tabary"
+            ],
+            "halId_s": "hal-03096124",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03096124",
+            "doiId_s": "10.3233/FAIA200115",
+            "publicationDateY_i": 2020,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03096124/file/1557_paper.pdf"
+            ],
+            "n": 3
+        },
+        {
+            "title_s": [
+                "Refining Constraint Weighting"
+            ],
+            "abstract_s": [
+                "Backtracking search is a complete approach that is traditionally used to solve instances modeled as constraint satisfaction problems. The space explored during search depends dramatically on the order that variables are instantiated. Considering that a perfect variable ordering might result to a backtrack-free search (i.e., finding backdoors, cycle cutsets), finding heuristics for variable ordering has always attracted research interest. For fifteen years, constraint weighting has been shown to be a successful approach for guiding backtrack search. In this paper, we show how the popular generic variable ordering heuristic dom/wdeg can be made more robust by taking finer information at each conflict: the \"current\" arity of the failing constraint as well as the size of the current domains of the variables involved in that constraint. Our experimental results show the practical interest of this refined variant of constraint weighting."
+            ],
+            "conferenceTitle_s": "ICTAI 2019: IEEE 31st International Conference on Tools with Artificial Intelligence",
+            "authFullName_s": [
+                "Hugues Wattez",
+                "Christophe Lecoutre",
+                "Anastasia Paparrizou",
+                "S\u00e9bastien Tabary"
+            ],
+            "halId_s": "hal-02414832",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-02414832",
+            "doiId_s": "10.1109/ICTAI.2019.00019",
+            "publicationDateY_i": 2019,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-02414832/file/ictai%2719%20final.pdf"
+            ],
+            "n": 4
+        },
+        {
+            "title_s": [
+                "Data Analytics and Visualization for Connected Objects: A Case Study for Sleep and Physical Activity Trackers"
+            ],
+            "conferenceTitle_s": "31st International Conference on Industrial Engineering and Other Applications of Applied Intelligent Systems (IEA/AIE'18)",
+            "authFullName_s": [
+                "Karim Tabia",
+                "Hugues Wattez",
+                "Nicolas Yd\u00e9e",
+                "Karima Sedki"
+            ],
+            "halId_s": "hal-03301188",
+            "uri_s": "https://hal-univ-artois.archives-ouvertes.fr/hal-03301188",
+            "page_s": "685-696",
+            "doiId_s": "10.1007/978-3-319-92058-0_66",
+            "publicationDateY_i": 2018,
+            "files_s": [
+                "https://hal-univ-artois.archives-ouvertes.fr/hal-03301188/file/llncs%20preprint.pdf"
+            ],
+            "n": 5
+        }
+    ],
+    "conf_nat": [
+        {
+            "title_s": [
+                "Exploring AI approaches to improve the resolution of unsplittable multicommodity flow problems in wireless networks"
+            ],
+            "conferenceTitle_s": "39th Spanish Conference on Statistics and Operation Research (SEIO'22)",
+            "authFullName_s": [
+                "Sonia Haddad-Vanier",
+                "Romain Wallon",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03647245",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03647245",
+            "publicationDateY_i": 2022,
+            "n": 6
+        },
+        {
+            "title_s": [
+                "Metrics : un unique outil pour l'analyse d'exp\u00e9rimentations"
+            ],
+            "conferenceTitle_s": "23e Conf\u00e9rence ROADEF de la Soci\u00e9t\u00e9 Fran\u00e7aise de Recherche Op\u00e9rationnelle et d'Aide \u00e0 la D\u00e9cision (ROADEF'22)",
+            "authFullName_s": [
+                "Thibault Falque",
+                "Romain Wallon",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03595329",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03595329",
+            "publicationDateY_i": 2022,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03595329/file/resume.pdf"
+            ],
+            "n": 7
+        },
+        {
+            "title_s": [
+                "Exploration des approches de l'IA pour renforcer la r\u00e9solution des probl\u00e8mes de multiflots entiers dans les r\u00e9seaux \u00e9nerg\u00e9tiques"
+            ],
+            "conferenceTitle_s": "23e Conf\u00e9rence ROADEF de la Soci\u00e9t\u00e9 Fran\u00e7aise de Recherche Op\u00e9rationnelle et d'Aide \u00e0 la D\u00e9cision (ROADEF'22)",
+            "authFullName_s": [
+                "Sonia Haddad-Vanier",
+                "Romain Wallon",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03597206",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03597206",
+            "publicationDateY_i": 2022,
+            "n": 8
+        },
+        {
+            "title_s": [
+                "Focus sur les heuristiques bas\u00e9es sur la pond\u00e9ration de contraintes"
+            ],
+            "abstract_s": [
+                "La recherche avec retour-arri\u00e8re est une approche compl\u00e8te et traditionnellement utilis\u00e9e pour la r\u00e9solution de probl\u00e8mes de satisfaction et d'optimisation de contraintes. Il est bien connu que l'espace explor\u00e9 durant la recherche peut drastiquement fluctuer selon l'ordre dans lequel les variables sont instanci\u00e9es. En consid\u00e9rant que le parfait ordonnancement des variables r\u00e9sulterait en une recherche sans retour-arri\u00e8re, la recherche d'heuristiques de choix de variables suscite toujours autant l'int\u00e9r\u00eat des chercheurs. Depuis quinze ans, l'approche bas\u00e9e sur la pond\u00e9ration des contraintes s'est toujours montr\u00e9e efficace pour guider la recherche. Dans cet article, nous montrons comment les heuristiques g\u00e9n\u00e9riques de choix de variables wdeg et dom/wdeg ont \u00e9t\u00e9 rendues plus robustes ces derni\u00e8res ann\u00e9es par un affinement et le vieillissement de l'information extraite \u00e0 chaque conflit. Nos r\u00e9sultats exp\u00e9rimentaux avec ACE, le nouvel avatar d'AbsCon, montrent le r\u00e9el int\u00e9r\u00eat de ces heuristiques revisit\u00e9es.",
+                "Backtracking search is a complete approach that is traditionally used to solve instances modeled as constraint satisfaction or optimization problems. The space explored during search depends dramatically on the order that variables are instantiated. Considering that a perfect variable ordering might result to a backtrack-free search, finding variable ordering heuristics has always attracted research interest. For fifteen years, constraint weighting has been shown to be a successful approach for guiding backtrack search. In this paper, we show how the popular generic variable ordering heuristics dom/wdeg and wdeg have been made more robust these two last years by refining and aging the extracted information at each conflict. Our experimental results with ACE, the new AbsCon avatar, show the practical interest of these revisited constraint weighting heuristics."
+            ],
+            "conferenceTitle_s": "16es Journ\u00e9es Francophones de Programmation par Contraintes (JFPC\u201921)",
+            "authFullName_s": [
+                "Hugues Wattez",
+                "Fr\u00e9d\u00e9ric Koriche",
+                "Christophe Lecoutre",
+                "Anastasia Paparrizou",
+                "S\u00e9bastien Tabary"
+            ],
+            "halId_s": "hal-03449631",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03449631",
+            "publicationDateY_i": 2021,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03449631/file/JFPC_2021_F2.pdf"
+            ],
+            "n": 9
+        },
+        {
+            "title_s": [
+                "Perturbation des heuristiques de branchement dans la r\u00e9solution de contraintes"
+            ],
+            "abstract_s": [
+                "L'heuristique de choix de variables est l'un des m\u00e9canismes cl\u00e9s d'un solveur de contraintes. Au cours des deux derni\u00e8res d\u00e9cennies, des heuristiques efficaces ont \u00e9t\u00e9 propos\u00e9es, adaptant l'ordre des variables au fur et \u00e0 mesure que la recherche progresse. Dans le m\u00eame temps, des m\u00e9thodes de red\u00e9marrage et de randomisation ont \u00e9t\u00e9 con\u00e7ues pour rendre les solveurs plus robustes. Alors que les m\u00e9thodes de red\u00e9marrage sont maintenant bien comprises, choisir comment et quand randomiser une heuristique donn\u00e9e reste un probl\u00e8me ouvert. Dans cet article, nous pr\u00e9sentons plusieurs strat\u00e9gies de perturbation conceptuellement simples pour incorporer des choix al\u00e9atoires dans la r\u00e9solution de contraintes avec red\u00e9marrages. La quantit\u00e9 de perturbation est contr\u00f4l\u00e9e et apprise par des bandits sous diverses politiques d'exploration (stationnaire ou non stationnaire). L'\u00e9valuation exp\u00e9rimentale montre une am\u00e9lioration significative des performances pour les heuristiques perturb\u00e9es par rapport \u00e0 leurs homologues d'origine."
+            ],
+            "conferenceTitle_s": "16es Journ\u00e9es Francophones de Programmation par Contraintes (JFPC\u201921)",
+            "authFullName_s": [
+                "Hugues Wattez",
+                "Frederic Koriche",
+                "Anastasia Paparrizou"
+            ],
+            "halId_s": "hal-03449550",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03449550",
+            "publicationDateY_i": 2021,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03449550/file/JFPC_2021_F3.pdf"
+            ],
+            "n": 10
+        },
+        {
+            "title_s": [
+                "Descente Agressive de Borne en Optimisation sous Contraintes"
+            ],
+            "conferenceTitle_s": "16\u00e8mes Journ\u00e9es Francophones de Programmation par Contraintes (JFPC'21)",
+            "authFullName_s": [
+                "Thibault Falque",
+                "Christophe Lecoutre",
+                "Bertrand Mazure",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03625476",
+            "uri_s": "https://hal-univ-artois.archives-ouvertes.fr/hal-03625476",
+            "publicationDateY_i": 2021,
+            "files_s": [
+                "https://hal-univ-artois.archives-ouvertes.fr/hal-03625476/file/JFPC_2021_A2.pdf"
+            ],
+            "n": 11
+        },
+        {
+            "title_s": [
+                "Metrics : Mission Exp\u00e9rimentations"
+            ],
+            "abstract_s": [
+                "Le d\u00e9veloppement de solveurs de contraintes s'accompagne n\u00e9cessairement d'une phase d'exp\u00e9rimentation, permettant d'\u00e9valuer les performances des fonctionnalit\u00e9s implant\u00e9es. Pour chacun des solveurs consid\u00e9r\u00e9s, il faut alors collecter et analyser des statistisques relatives \u00e0 leur ex\u00e9cution et qui, le plus souvent, restent les m\u00eames. N\u00e9anmoins, il existe probablement autant de scripts permettant d'extraire ces statistiques et de tracer les figures associ\u00e9es que de chercheurs du domaine. Un outil unifiant et facilitant les analyses de r\u00e9sultats exp\u00e9rimentaux para\u00eet donc n\u00e9cessaire, notamment pour favoriser le partage et la reproductibilit\u00e9 de ces r\u00e9sultats. Partant de ce constat, nous avons d\u00e9velopp\u00e9 la biblioth\u00e8que Metrics, dont l'ambition est de fournir une cha\u00eene compl\u00e8te d'outils con\u00e7ue dans cette optique. Dans cet article, nous pr\u00e9sentons cette biblioth\u00e8que et illustrons son utilisation en rejouant l'analyse des r\u00e9sultats de la comp\u00e9tition XCSP'19.",
+                "Developing constraint solvers comes with the need to perform experiments, in order to evaluate the performance of the implemented features. For each considered solver, one needs to collect and analyze statistics about its execution which, most of the time, remain the same. However, there exist probably as many scripts allowing to extract such statistics and to draw the associated figures as researchers in the domain. A unifying tool making easier the analysis of experimental results seems thus required, especially to favor the sharing and the reproducibility of these results. Based on this observation, we have developed the Metrics library, whose ambition is to provide a complete toolchain designed in that purpose. In this paper, we present this library and illustrate its use through the analysis of the results of the XCSP'19 competition."
+            ],
+            "conferenceTitle_s": "16es Journ\u00e9es Francophones de Programmation par Contraintes (JFPC\u201921)",
+            "authFullName_s": [
+                "Thibault Falque",
+                "Romain Wallon",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03295285",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03295285",
+            "publicationDateY_i": 2021,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03295285/file/JFPC_2021_G1.pdf"
+            ],
+            "n": 12
+        },
+        {
+            "title_s": [
+                "Heuristiques de recherche : un bandit pour les gouverner toutes"
+            ],
+            "abstract_s": [
+                "L'automatisation de la configuration des solveurs a re\u00e7u une grande attention ces derni\u00e8res ann\u00e9es notam-ment pour la capacit\u00e9 \u00e0 ajuster ses diff\u00e9rents param\u00e8tres selon l'instance \u00e0 r\u00e9soudre. De plus, cette automatisation \u00e9vite \u00e0 l'utilisateur le choix d'une configuration appropri\u00e9e \u00e0 chaque instance et ainsi, \u00e9vite une t\u00e2che requ\u00e9rant des qualit\u00e9s d'expert et rend plus accessible les outils de la programmation par contraintes. Les techniques bas\u00e9es sur les portfolios ont \u00e9t\u00e9 grandement \u00e9tudi\u00e9es dans le but de configurer les solveurs de contraintes. Son principe est d'entra\u00eener le solveur \u00e0 r\u00e9soudre plusieurs instances afin de trouver la meilleure configuration lors de la r\u00e9solution d'une instance inconnue. Dans cette \u00e9tude, nous portons notre attention sur le choix de la meilleure strat\u00e9gie de recherche, \u00e0 savoir la meilleure heuristique de choix de variables. Nous proposons une structure algorithmique g\u00e9n\u00e9rique qui optimise la s\u00e9lection des diff\u00e9rentes heu-ristiques de choix de variables gr\u00e2ce \u00e0 l'apprentissage en ligne, c'est-\u00e0-dire sans aucune connaissance apriori. Dans ce but, nous utilisons une technique en apprentissage, appel\u00e9e les bandits multi-bras, permettant d'automatiser la s\u00e9lection de l'heuristique la plus appropri\u00e9e et guidant au mieux la recherche. Nous essayons deux politiques diff\u00e9rentes bas\u00e9es sur les bandits multi-bras g\u00e9rant la proportion d'exploration-exploitation. Une \u00e9valuation ex-p\u00e9rimentale d\u00e9montre que la machine propos\u00e9e r\u00e9sulte en un solveur plus efficace et stable. Abstract Automating solver's configuration has received a great attention last years as it can adjust the various parameters of a solver to the instance to be solved. In addition, this automation releases the user from choosing the suitable configuration each time, task that requires a great expertise and thus, burdens the widespread of * Papier doctorant : Hugues Wattez 1,2 est auteur principal. constraint programming technology and tools. Portfolio based techniques have been vastly used to configure constraint solvers. The principle of portfolios is to train themselves by solving many instances in advance , in order to find the right combination of parameters of the solver when solving an unknown instance. In this work, we turn our attention to the selection of the best search strategy, namely the best variable ordering. We propose a generic algorithmic framework that selects among several variable ordering heuristics using on-line learning, i.e. without any prior knowledge. For this purpose, we deploy a machine learning technique, called multi-armed bandits, that allows to automatically select the appropriate heuris-tic to guide the search. We tried two different policies for multi-armed bandits that manage the proportion of exploration-exploitation. We make a thorough experimental evaluation that demonstrates that the proposed framework results in a more efficient and stable solver."
+            ],
+            "conferenceTitle_s": "15es Journ\u00e9es Francophones de Programmation par Contraintes \u2013 JFPC 2019",
+            "authFullName_s": [
+                "Hugues Wattez",
+                "Fr\u00e9d\u00e9ric Koriche",
+                "Christophe Lecoutre",
+                "Anastasia Paparrizou",
+                "S\u00e9bastien Tabary"
+            ],
+            "halId_s": "hal-02414288",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-02414288",
+            "publicationDateY_i": 2019,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-02414288/file/jfpc19%20final.pdf"
+            ],
+            "n": 13
+        }
+    ],
+    "workshops": [
+        {
+            "title_s": [
+                "Aggressive Bound Descent for Constraint Optimization"
+            ],
+            "abstract_s": [
+                "Backtrack search is a classical complete approach for exploring the search space of a constraint optimization problem. Each time a new solution is found during search, its associated bound is used to constrain more the problem, and so the remaining search. An extreme (bad) scenario is when solutions are found in sequence with very small differences between successive bounds. In this paper, we propose an aggressive bound descent (ABD) approach to remedy this problem: new bounds are modified exponentially as long as the searching algorithm is successful. We show that this approach can render the solver more robust, especially at the beginning of search. Our experiments confirm this behavior for constraint optimization"
+            ],
+            "conferenceTitle_s": "Doctoral Program of the 28th International Conference on Principles and Practice of Constraint Programming.",
+            "authFullName_s": [
+                "Thibault Falque",
+                "Christophe Lecoutre",
+                "Bertrand Mazure",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03749141",
+            "uri_s": "https://hal.archives-ouvertes.fr/hal-03749141",
+            "publicationDateY_i": 2022,
+            "files_s": [
+                "https://hal.archives-ouvertes.fr/hal-03749141/file/paper.pdf"
+            ],
+            "n": 14
+        },
+        {
+            "title_s": [
+                "Metrics: Towards a Unified Library for Experimenting Solvers"
+            ],
+            "abstract_s": [
+                "When developing a SAT solver, one of the most important parts is to perform experiments so as to evaluate its performance. Most of the time, this process remains the same, so that everybody collects almost the same statistics about the solver execution. However, how many scripts are there to retrieve experimental data and draw scatter or cactus plots? Probably as many as researchers in the domain. Based on this observation, this paper introduces Metrics, a Python library, aiming to unify and make easier the analysis of solver experiments. The ambition of Metrics is to provide a complete toolchain from the execution of the solver to the analysis of its performance. In particular, this library simplifies the retrieval of experimental data from many different inputs (including the solver's output), and provides a nice interface for drawing commonly used plots, computing statistics about the execution of the solver, and effortlessly organizing them (e.g., in Jupyter notebooks). In the end, the main purpose of Metrics is to favor the sharing and reproducibility of experimental results and their analysis."
+            ],
+            "conferenceTitle_s": "11th International Workshop on Pragmatics of SAT (POS'20)",
+            "authFullName_s": [
+                "Thibault Falque",
+                "Romain Wallon",
+                "Hugues Wattez"
+            ],
+            "halId_s": "hal-03301303",
+            "uri_s": "https://hal-univ-artois.archives-ouvertes.fr/hal-03301303",
+            "publicationDateY_i": 2020,
+            "files_s": [
+                "https://hal-univ-artois.archives-ouvertes.fr/hal-03301303/file/paper.pdf"
+            ],
+            "n": 15
+        }
+    ],
+    "others": [
+        {
+            "title_s": [
+                "Solveurs de Contraintes Autonomes",
+                "Autonomous Constraint Solvers"
+            ],
+            "abstract_s": [
+                "La programmation par contraintes est d\u00e9clarative : l'utilisateur mod\u00e9lise le probl\u00e8me (sous forme de contraintes) sans se soucier de la partie r\u00e9solution. La r\u00e9solution est d\u00e9l\u00e9gu\u00e9e \u00e0 un programme g\u00e9n\u00e9rique appel\u00e9 solveur de contraintes. Les solveurs de contraintes utilisent des m\u00e9canismes issus de l'intelligence artificielle pour guider ses choix (heuristiques), et pour r\u00e9duire efficacement l'espace de recherche (inf\u00e9rence). Les solveurs de contraintes r\u00e9cents sont \u00e9quip\u00e9s de plusieurs heuristiques. Le choix de la meilleure heuristique pour r\u00e9soudre une instance de probl\u00e8me donn\u00e9e est actuellement d\u00e9l\u00e9gu\u00e9 \u00e0 l'utilisateur. L'objectif de cette th\u00e8se est de rendre les solveurs de contraintes plus autonomes. Nous voulons enlever toute charge cognitive \u00e0 l'utilisateur concernant le processus de r\u00e9solution. Pendant la recherche de solutions, le solveur red\u00e9marre r\u00e9guli\u00e8rement la recherche pour \u00e9viter les impasses co\u00fbteuses. Nous proposons de s\u00e9lectionner automatiquement l'heuristique la plus prometteuse apr\u00e8s chaque red\u00e9marrage. En r\u00e9ponse \u00e0 ce probl\u00e8me de choix s\u00e9quentiel, nous nous inspirons des politiques traitant du probl\u00e8me du bandit multi-bras. De telles politiques sont issues de l'apprentissage par renforcement et permettent d'explorer un ensemble d'actions tout en exploitant, le plus souvent possible, l'action la plus prometteuse. Apr\u00e8s avoir d\u00e9fini comment incorporer cet outil d'apprentissage automatique dans un solveur, nous proposons plusieurs applications pour rendre les solveurs de contraintes modernes plus autonomes. Premi\u00e8rement, nous appliquons les politiques propos\u00e9es dans la litt\u00e9rature sur les bandits multi-bras pour apprendre la meilleure heuristique parmi un ensemble d'heuristiques fournies par le solveur. Sur la base de cette premi\u00e8re application, nous proposons une nouvelle politique qui est plus coh\u00e9rente avec la structure des solveurs actuels. Toujours en utilisant des politiques de bandit, nous proposons d'adapter la quantit\u00e9 d'al\u00e9a n\u00e9cessaire pour perturber une heuristique donn\u00e9e et la rendre plus efficace. Enfin, nous \u00e9tendons ces r\u00e9sultats aux solveurs de contraintes sous optimisation.",
+                "Constraint programming is declarative: the user models the problem (in the form of constraints) without worrying about the solving part. The solving is delegated to a generic program called a constraint solver. Constraint solvers use mechanisms from artificial intelligence to guide its choices (heuristics), and to efficiently reduce the search space (inference). Recent constraint solvers are equipped with several heuristics. Choosing the best heuristic to solve a given problem instance is currently delegated to the user. The goal of this thesis is to make constraint solvers more autonomous. We want to remove any cognitive burden from the user regarding the solving process. While searching for solutions, the solver often restarts the search to avoid expensive dead-ends. We propose to automatically select the most promising heuristic after each restart. In response to this sequential choice problem, we take inspiration from policies addressing the multi-armed bandit problem. Such policies are derived from reinforcement learning and allow to explore a set of actions while exploiting the most profitable one as often as possible. After having defined how to incorporate this machine learning tool in a solver, we propose several applications to make modern constraint solvers more autonomous. First, we apply the policies proposed in the multi-armed-bandits literature to learn the best heuristic among a set of heuristics provided by the solver. Based on this first application, we propose a new policy that is more consistent with the structure of current solvers. Still using bandit policies, we propose to adapt the amount of randomization needed to perturb a given heuristic and make it more efficient. Finally, we extend these results to constraint optimization solvers."
+            ],
+            "authFullName_s": [
+                "Hugues Wattez"
+            ],
+            "halId_s": "tel-03648917",
+            "uri_s": "https://hal-univ-artois.archives-ouvertes.fr/tel-03648917",
+            "publicationDateY_i": 2021,
+            "files_s": [
+                "https://hal-univ-artois.archives-ouvertes.fr/tel-03648917/file/these_light.pdf"
+            ],
+            "n": 16
+        }
+    ],
+    "refs": {
+        "hal-03678354": 1,
+        "hal-03096113": 2,
+        "hal-03096124": 3,
+        "hal-02414832": 4,
+        "hal-03301188": 5,
+        "hal-03647245": 6,
+        "hal-03595329": 7,
+        "hal-03597206": 8,
+        "hal-03449631": 9,
+        "hal-03449550": 10,
+        "hal-03625476": 11,
+        "hal-03295285": 12,
+        "hal-02414288": 13,
+        "hal-03749141": 14,
+        "hal-03301303": 15,
+        "tel-03648917": 16
+    }
+}

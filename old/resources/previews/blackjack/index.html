@@ -1,0 +1,96 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  
+	<head>
+		<title>Table de BlackJack by MERCIER & SKRIPNIK & COCO</title>
+		<script language=Javascript src="java.js"></script>
+		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css.css" />
+	</head>
+
+	<body onLoad="action0()+action2()" style="margin: 0px;">
+		<div id="body">
+			<table>
+				<tr>
+					<td>
+						<h2>Black Jack <div style="font-size: 23px; text-align: right;">by Mercier & Skripnik & Coco</div></h2>
+					</td>
+					<td class="joueur">
+						<div>
+							<h1>Le croupier</h1>
+							cumule
+							<form name="valeurcarte1">
+								 <input name="valcarte1" type="text" size="2">
+							</form>
+							points !
+						</div>                                     
+
+						<div style="border: solid 1px yellow; width: 200px;">
+							<span id="carte1"></span>
+							<span id="carte2"></span>
+							<span id="carte6"></span>
+						</div>
+							
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="joueur">
+						
+						<div>
+							<h1>Joueur 1</h1>
+							cumule
+							<form name="valeurcarte2">
+								 <input name="valcarte2" type="text" size="2">
+							</form>
+							points !
+						</div>
+						
+							<span id="carte3"></span>                                    
+							<span id="carte4"></span>
+							<span id="carte5"></span>
+						
+					</td>
+					<td style="font-family: arial;">
+						Configuration minimale :
+						<ul>
+							<li>Une résolution minimale de 1024*500</li>
+							<li>Un navigateur à jour</li>
+						</ul>
+						Règle du BlackJack :
+						<ul>
+							<li>Obtenir un score le plus proche possible de 21 tout en ne dépassant pas cette limite</li>
+							<li>Les as peuvent prendre deux valeurs différentes : 1 ou 11</li>
+							<li>Une fois appuyé sur "stand", le croupier retourne sa carte et pioche de nouvelles cartes si son score est inférieur au votre et à 17</li>
+							<li>La mise par défaut est de 1, mais peut être doublée par pression du bouton "double"</li>
+						</ul>
+						<center><b>Good luck !</b></center>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="win">
+			<h1>Gagné !</h1>
+			<div><button onClick="restart()">Remiser !</button></div>
+		</div>
+		<div id="lose">
+			<h1>Perdu !</h1>
+			<div><button onClick="restart()">Remiser !</button></div>
+		</div>
+		<div id="egale">
+			<h1>Egalité !</h1>
+			<button onClick="restart()">Remiser !</button>
+		</div>
+		<div id="button"><button onClick="actionHit()">hit</button> <button onClick="actionStand()">stand</button> <button onClick="actionDouble()">double</button></div>
+		<div>
+			Gain :
+			<form name="valeurgain">
+				 <input name="valgain" type="text" size="2" value="0">
+			</form></span>
+			
+		</div>
+	</body>
+</html>
+

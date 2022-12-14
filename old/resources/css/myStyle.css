@@ -1,0 +1,76 @@
+img.profile {
+	width: 150px;
+	border-radius: 75px;
+}
+
+.contact-list>li {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-container {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu-container {
+	padding: 30px;
+}
+
+.menu-container ul li {
+    margin-bottom: 5px;
+}
+
+.menu-container ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-container ul li.active a {
+    color: white;
+    font-weight: 700;
+}
+
+.menu-container ul li a:hover {
+	text-decoration: none;
+    color: white;
+}
+
+.lang-ul li {
+	color: black;
+	font-weight: 500;
+}
+
+.lang-ul li .lang-desc {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar-wrapper {
+	min-height: 0px;
+}
+
+.wrapper {
+	min-height: 734px;
+}
+
+.main-wrapper {
+	min-height: inherit;
+}
+
+.tab-content {
+	padding-top: 10px;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.img-thumbnail {
+	margin: 2px;
+}
+
+.main-wrapper .upper-row {
+	overflow: visible;
+}

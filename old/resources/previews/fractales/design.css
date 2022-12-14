@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'danielbk.ttf';
+    src: url('fonts/danielbk.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Walkway_SemiBold.ttf';
+    src: url('fonts/Walkway_UltraBold.ttf') format('truetype');
+}
+
+body
+{
+	width: auto;
+	height: auto;
+	background: url('images/bg.png') repeat-x black;
+	margin: 0px;
+}
+
+#header
+{
+	width: auto;
+	height: 167px;
+	background: url('images/header.png') no-repeat center #A4A49B;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: solid 4px black;
+	border-bottom: solid 4px black;
+	box-shadow: 6px 6px 6px #161616;
+}
+
+#titre
+{
+	width: 300px;
+	height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	font: 30px bold italic;
+	color: #FFBB00;
+	font-family: 'danielbk.ttf';
+	background: url('images/font_titre.png') repeat-x #BF0000;
+	border: solid 3px black;
+	margin-left: -10px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+#limite_titre
+{
+	width: 1100px;
+	border: solid 2px white;
+}
+
+#tpe
+{
+	width: 550px;
+	position: absolute;
+	right: 5px;
+	margin-top: 0px;
+	padding-top: 1px;
+	text-align: center;
+	font-size: 15px;
+	color: #FFBB00;
+	font-family: 'danielbk.ttf';
+	background: url('images/font_tpe.png') repeat-x #BF0000;
+	border: solid 3px black;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+#corps
+{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	background: #A4A49B;
+	border: solid 2px #BF0000;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+#corps p
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	text-indent: 30px;
+	font: 15px arial;
+}
+
+.enveloppe_h2, .enveloppe_intro_ccl
+{
+	border: solid 2px black;
+	border-radius: 10px;
+	width: 22cm;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 3px 3px 3px black;
+}
+
+#corps h2
+{
+	font-size: 16px;
+	color: #FFBB00;
+	font-family: comic sans ms;
+	background: url('images/font_tpe.png') repeat-x #BF0000;
+	padding-left: 10px;
+	margin: 0px;
+	border-bottom: solid 2px black;
+}
+
+#corps h2 a
+{
+	font-size: 16px;
+	color: #FFBB00;
+}
+
+#corps h2 a:hover
+{
+	text-shadow: 0px 0px 3px black;
+}
+
+.enveloppe_h1
+{
+	border: solid 2px black;
+	border-radius: 10px;
+	width: 23cm;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	background-color: #FFFF35;
+	box-shadow: 3px 3px 3px black;
+}
+
+#corps h1
+{
+	font: bolder 24px arial;
+	color: #BF0000;
+	background: url('images/font_titre.png') repeat-x #FFFF35;
+	margin: 0px;
+	text-align: center;
+	height: 30px;
+	padding-top: 4px;
+	letter-spacing: 3px;
+}
+
+#corps h6
+{
+	margin: 0px;
+	text-align: center;
+	border-top: dashed 1px black;
+	border-bottom: dashed 1px black;
+}
+
+.enveloppe_intro_ccl
+{
+	background-color: #BF0000;
+	color: #FFBB00;
+	width: 20cm;
+}
+
+#corps img
+{
+	display: block;
+	margin: auto;
+}
+
+#corps .img_zoom
+{
+	display: block;
+	margin: auto;
+	height: 200px;
+	cursor: url("images/curseur.gif"), auto;
+}
+
+#corps .img_zoom:hover
+{
+	height: auto;
+	max-width: 22cm;
+}
+
+#corps table
+{
+	width: 100%;
+}
+
+#corps td
+{
+	width: 50%;
+}
+
+#menu_vertical
+{
+	width: 50px;
+	height: 112px;
+	position: fixed;
+	border: solid 3px black;
+	background: url('images/font_titre.png') repeat-x #BF0000;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+	margin: 5px;
+	margin-left: -10px;
+	bottom: 0px;
+	overflow: hidden;
+	font-family: tahoma;
+}
+
+#menu_vertical:hover
+{
+	width: 300px;
+	height: auto;
+}
+
+#menu_vertical .titre1, #menu_vertical .titre1 a
+{
+	list-style-type: upper-roman;
+	color: #FFBB00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menu_vertical .titre2, #menu_vertical .titre2 a
+{
+	list-style-type: upper-alpha;
+	color: black;
+	text-decoration: none;
+}
+
+#menu_vertical a:hover
+{
+	text-shadow: 0px 0px 3px black;
+}
+
+#menu_vertical td
+{
+	vertical-align: top;
+}
+
+#plan table
+{
+	border-collapse: collapse;
+	margin-left: 15px;
+}
+
+#plan p
+{
+	color: #FFBB00;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0px;
+}
+
+#menu_lateral
+{
+	width: auto;
+	height: auto;
+	background: url('images/font_titre.png') repeat-x #FFFF35;
+	margin-top: 10px;
+}
+
+#menu_lateral table
+{
+	border-top: solid 3px #BF0000;
+	border-bottom: solid 3px #BF0000;
+	width: 100%;
+}
+
+#menu_lateral td
+{
+	width: auto;
+	text-align: center;
+}
+
+#menu_lateral a
+{
+	font-size: 20px;
+	font-family: 'Walkway_SemiBold.ttf';
+	font-weight: bold;
+	color: black;	
+}
+
+#menu_lateral a:hover
+{
+	text-shadow: 0px 0px 3px black;
+}
+
+#footer
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #A4A49B;
+	border-top: solid 2px #FFFF35;
+	border-bottom: solid 2px #FFFF35;
+}
+
+#footer p
+{
+	font: bold 12px arial;
+	margin: 5px;
+	text-align: center;
+}
+
+.page
+{
+	width: 21cm;
+	height: 29.7cm;
+	border: solid 1px black;
+	background-color: white;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 0px black
+}
+
+.marge
+{
+	margin: 2cm;
+}
+
+.page p
+{
+	margin: 0px;
+	text-indent: 1.25cm;
+	font-size: 2.1ex;
+}
